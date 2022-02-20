@@ -1,4 +1,4 @@
-package com.app.composecodekata
+package com.app.composecodekata.basic
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.os.Bundle
@@ -25,6 +25,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.app.composecodekata.R
 import com.app.composecodekata.ui.theme.JetpackComposeCodeKataAS24Theme
 
 class MainActivity : ComponentActivity() {
