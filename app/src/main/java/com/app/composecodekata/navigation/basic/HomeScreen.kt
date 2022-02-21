@@ -1,6 +1,5 @@
 package com.app.composecodekata.navigation.basic
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
@@ -10,13 +9,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 
+/**
+ * Problem - 1: We need to navigate from Home Screen to Detail screen
+ *
+ * Problem - 2: We need to navigate from Details Screen to Home screen explicitly without the back button
+ *
+ * Problem - 3: How do we fix the backstack problem?
+ *
+ * Hint: https://developer.android.com/jetpack/compose/navigation
+ */
 @Composable
-fun HomeScreen(
-    // Hint you need navigation controller here which is an inbuilt compose feature
-) {
+fun HomeScreen() {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
