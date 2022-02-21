@@ -15,16 +15,14 @@ import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun HomeScreen(
-    navController: NavController
+    // Hint you need navigation controller here which is an inbuilt compose feature
 ) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            modifier = Modifier.clickable {
-                navController.navigate(route = Screen.Detail.route)
-            },
+            // Hint: To add a click event make use of a Modifier
             text = "Home",
             color = MaterialTheme.colors.primaryVariant,
             fontSize = MaterialTheme.typography.h3.fontSize,
@@ -36,7 +34,5 @@ fun HomeScreen(
 @Composable
 @Preview(showBackground = true)
 fun HomeScreenPreview() {
-    HomeScreen(
-        navController = rememberNavController()
-    )
+    HomeScreen()
 }

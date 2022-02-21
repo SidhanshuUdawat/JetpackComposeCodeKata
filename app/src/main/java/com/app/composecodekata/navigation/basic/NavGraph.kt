@@ -3,7 +3,6 @@ package com.app.composecodekata.navigation.basic
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
 
 @Composable
 fun SetupNavGraph(
@@ -11,17 +10,9 @@ fun SetupNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route
+        startDestination = "" // Choose the start destination here
     ) {
-        composable(
-            route = Screen.Home.route
-        ) {
-            HomeScreen(navController = navController)
-        }
-        composable(
-            route = Screen.Detail.route
-        ) {
-            DetailScreen(navController = navController)
-        }
+        // Make use of composable to define the route
+
     }
 }

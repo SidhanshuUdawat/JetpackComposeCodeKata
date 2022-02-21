@@ -15,16 +15,14 @@ import androidx.navigation.NavController
 
 @Composable
 fun DetailScreen(
-    navController: NavController
+    // Hint you need navigation controller here which is an inbuilt compose feature
 ) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            modifier = Modifier.clickable {
-                navController.navigate(route = Screen.Home.route)
-            },
+            // Hint: To add a click event make use of a Modifier
             text = "Detail",
             color = MaterialTheme.colors.secondaryVariant,
             fontSize = MaterialTheme.typography.h3.fontSize,
@@ -36,7 +34,5 @@ fun DetailScreen(
 @Composable
 @Preview(showBackground = true)
 fun DetailScreenPreview() {
-    DetailScreen(
-        navController = androidx.navigation.compose.rememberNavController()
-    )
+    DetailScreen()
 }
