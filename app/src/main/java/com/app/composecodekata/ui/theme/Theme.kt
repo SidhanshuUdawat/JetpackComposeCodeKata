@@ -6,7 +6,6 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-// Try to use the DarkColor Palette to support dark theme
 private val DarkColorPalette = darkColors(
     surface = Blue,
     onSurface = Navy,
@@ -21,9 +20,12 @@ private val LightColorPalette = lightColors(
     onPrimary = Navy
 )
 
+// Problem: We need to support dark theme!!!
+// Hint: a simple conditional check can be used to detect if the system is in dark theme or not
+// Try to use the DarkColor Palette to support dark theme
+
 @Composable
 fun JetpackComposeCodeKataAS24Theme(content: @Composable() () -> Unit) {
-    // Hint: a simple conditional check can be used to detect if the system is in dark theme
 
     MaterialTheme(
         colors = LightColorPalette,
