@@ -14,6 +14,9 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 
 /**
+ * Problem - 1: Lets try to understand and fix the crash
+ * Hint: Try adding route directly inside the navigate function and replace the {id} and {name}
+ *
  */
 @Composable
 fun HomeScreen(
@@ -25,9 +28,7 @@ fun HomeScreen(
     ) {
         Text(
             modifier = Modifier.clickable {
-                navController.navigate(
-                    route = Screen.Detail.routeTo(id = 11)
-                )
+                navController.navigate(Screen.Detail.route)
             },
             text = "Home",
             color = MaterialTheme.colors.primaryVariant,

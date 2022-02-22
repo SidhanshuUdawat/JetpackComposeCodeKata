@@ -14,16 +14,14 @@ import androidx.navigation.compose.rememberNavController
 
 
 @Composable
-fun DetailScreen(
-    navController: NavController
-) {
+fun DetailScreen(id: Int?, name: String?) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
             // Hint: To add a click event make use of a Modifier
-            text = "Detail",
+            text = "Detail id: $id name: $name",
             color = MaterialTheme.colors.secondaryVariant,
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold
@@ -34,5 +32,5 @@ fun DetailScreen(
 @Composable
 @Preview(showBackground = true)
 fun DetailScreenPreview() {
-    DetailScreen(navController = rememberNavController())
+    DetailScreen(20,"Name")
 }

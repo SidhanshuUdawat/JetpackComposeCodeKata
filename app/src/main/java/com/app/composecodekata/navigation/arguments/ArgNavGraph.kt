@@ -28,14 +28,13 @@ fun SetupNavGraph(
                 },
                 navArgument("name") {
                     type = NavType.StringType
-                    nullable = true
                 }
             )
         ) {
-            val id = it.arguments?.getInt("id").toString()
+            val id = it.arguments?.getInt("id")
             val name = it.arguments?.getString("name")
             println("Id: $id & Name: $name")
-            DetailScreen(navController = navController)
+            DetailScreen(id, name)
         }
     }
 }
