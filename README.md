@@ -21,7 +21,6 @@ We will cover the following topics:
 4. I trust you that you won't check the solution branch ;)
 
 # Reference
-1. https://github.com/sid-udawat24/JetpackComposeCodeKataAS24.git
-2. Navigation in Jetpack compose
-   https://www.youtube.com/watch?v=glyqjzkc4fk&list=PLSrm9z4zp4mFYcmFGcJmdsps_lpsaWvKM
+1. [Compose pathway](https://github.com/sid-udawat24/JetpackComposeCodeKataAS24.git)
+2. [Navigation in Jetpack compose](https://www.youtube.com/watch?v=glyqjzkc4fk&list=PLSrm9z4zp4mFYcmFGcJmdsps_lpsaWvKM)
 
