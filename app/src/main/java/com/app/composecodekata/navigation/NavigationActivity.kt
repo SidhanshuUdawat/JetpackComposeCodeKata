@@ -5,7 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.app.composecodekata.navigation.basic.SetupNavGraph
+import com.app.composecodekata.navigation.arguments.SetupNavGraph
+
 import com.app.composecodekata.ui.theme.JetpackComposeCodeKataAS24Theme
 
 class NavigationActivity : ComponentActivity() {
