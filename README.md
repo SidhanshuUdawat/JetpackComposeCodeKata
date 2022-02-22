@@ -16,7 +16,7 @@ We will cover the following topics:
 
 ## Getting Started
 1. Install the latest Android Studio.
-2. Download the Kata using *git clone https://github.com/sid-udawat24/JetpackComposeCodeKataAS24.git*
+2. Download the Kata using `git clone https://github.com/sid-udawat24/JetpackComposeCodeKataAS24.git`
 3. Import the sample into Android Studio.
 4. I trust you that you won't check the solution branch ;)
 
