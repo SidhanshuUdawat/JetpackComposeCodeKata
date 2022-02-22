@@ -1,5 +1,6 @@
 package com.app.composecodekata.navigation.arguments
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
@@ -9,19 +10,27 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 
+/**
+ */
 @Composable
-fun DetailScreen(
-    // Hint you need navigation controller here which is an inbuilt compose feature
+fun HomeScreen(
+    navController: NavController
 ) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            // Hint: To add a click event make use of a Modifier
-            text = "Detail",
-            color = MaterialTheme.colors.secondaryVariant,
+            modifier = Modifier.clickable {
+                navController.navigate(
+                    route = Screen.Detail.routeTo(id = 11)
+                )
+            },
+            text = "Home",
+            color = MaterialTheme.colors.primaryVariant,
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold
         )
@@ -30,6 +39,6 @@ fun DetailScreen(
 
 @Composable
 @Preview(showBackground = true)
-fun DetailScreenPreview() {
-    DetailScreen()
+fun HomeScreenPreview() {
+    HomeScreen(navController = rememberNavController())
 }
